@@ -1,0 +1,80 @@
+/* 
+
+class Main{
+    public static void main(String[] args){
+        String series="";
+        for(int i=0;i<26;i++){
+            char ch=(char)('a' + i);
+            System.out.println(ch);
+            series=series+ch;
+        }
+        System.out.println(series);
+    }
+}
+
+*/
+ 
+
+/*
+
+class Main{
+    public static void main(String[] args){
+        StringBuilder b=new StringBuilder();
+        for(int i=0;i<26;i++){
+            char ch=(char)('a'+i);
+            b.append(ch);
+        }
+        System.out.println(b);
+        b.deleteCharAt(0);
+        System.out.println(b);
+        b.reverse();
+        System.out.println(b);
+        System.out.println(b.toString());
+    }
+}
+
+*/
+ 
+
+/*
+
+import java.util.Arrays;
+class Main{
+    public static void main(String[] args){
+        String name="srihari yadav";
+        System.out.println(Arrays.toString(name.toCharArray()));
+        System.out.println(name.toLowerCase());
+        System.out.println(name);
+        System.out.println(name.indexOf('a'));
+        System.out.println("    Srihari    ".strip());
+        System.out.println(Arrays.toString(name.split(" ")));
+        System.out.println(name.toUpperCase());
+        System.out.println();
+        System.out.println();
+    }
+}
+
+*/
+
+
+class Main{
+    public static void main(String[] args){
+        String str="";
+        System.out.println(isPalindrome(str));
+        
+    }
+    public static boolean isPalindrome(String str){
+        if(str==null || str.length()==0){
+            return true;
+        }
+        str=str.toLowerCase();
+        for(int i=0;i<=str.length()/2;i++){
+            char start=str.charAt(i);
+            char end=str.charAt(str.length()-1-i);
+            if(start!=end){
+                return false;
+            }
+        }
+        return true;
+    }
+}

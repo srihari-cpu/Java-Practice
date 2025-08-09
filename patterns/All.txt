@@ -1,0 +1,225 @@
+// All patterns bottom to top
+
+class HelloWorld {
+    public static void main(String[] args) {
+       pattern10();
+    }
+
+    static void pattern31(int n){
+        int on=2*n;
+        for(int row=0;row<=on;row++){
+            for(int col=0;col<=on;col++){
+                int idx=Math.min(Math.min(row,col),Math.min(n-row,n-col));
+                System.out.print(idx+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern30(){
+        for(int i=1;i<=5;i++){
+            for(int sp=i+1;sp<=5;sp++){
+                System.out.print("  ");
+            }
+            for(int j=i;j>=1;j--){
+                System.out.print(j+" ");
+            }
+            for(int k=2;k<=i;k++){
+                System.out.print(k+" ");
+            }
+            System.out.println();
+        }
+    }
+    static void patternUsingFormula28(int n){
+        for(int i=0;i<2*n;i++){
+            int star= i>n?2*n-i:i;
+            int noofspaces=i>n?i-n:n-i;
+            for(int sp=0;sp<noofspaces;sp++){
+                System.out.print(" ");
+            }
+            for(int c=0;c<star;c++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern21(5){
+        int a=1;
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print((a++)+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern17(int n){
+        for(int i=1;i<=n*2;i++){
+            int c=i>n?2*n-i:i;
+            for(int sp=0;sp<n-c;sp++){
+                System.out.print("  ");
+            }
+            for(int j=c;j>=1;j--){
+                System.out.print(j+" ");
+            }
+            for(int k=2;k<=c;k++){
+                System.out.print(k+" ");
+            }
+            System.out.println();
+        }
+    }    
+
+    static void pattern12(){
+        for(int i=0;i<5;i++){
+            for(int sp=0;sp<i;sp++){
+                System.out.print(" ");
+            }
+            for(int j=i;j<5;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i=0;i<5;i++){
+            for(int sp=i+1;sp<5;sp++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    
+    static void pattern11(){
+        for(int i=0;i<5;i++){
+            for(int sp=0;sp<i;sp++){
+                System.out.print(" ");
+            }
+            for(int j=i;j<5;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern10(){
+        for(int i=0;i<5;i++){
+            for(int sp=i;sp<5;sp++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern9(){
+        for(int i=0;i<5;i++){
+            for(int sp=0;sp<i;sp++){
+                System.out.print(" ");
+            }
+            for(int k=i;k<5;k++){
+                System.out.print("*");
+            }
+            for(int j=i+1;j<5;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern8(){
+        for(int i=0;i<5;i++){
+            for(int sp=i+1;sp<5;sp++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print("*");
+            }
+            for(int k=0;k<i;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern7(){
+        for(int i=0;i<5;i++){
+            for(int sp=0;sp<i;sp++){
+                System.out.print(" ");
+            }
+            for(int j=i;j<5;j++){
+                System.out.print("*");
+            }
+            
+            System.out.println();
+        }
+    }
+    static void pattern6(){
+        for(int i=0;i<5;i++){
+            for(int sp=i+1;sp<5;sp++){
+                System.out.print(" ");
+            }
+            for(int j=0;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void patternUsingFormula5(int n){
+        for(int i=0;i<2*n;i++){
+            int star= i>n?2*n-i:i;
+            for(int c=0;c<star;c++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern5(){
+        for(int i=1;i<6;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=0;i<5;i++){
+            for(int j=i;j<5;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern4(){
+        for(int i=1;i<6;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+        
+    }
+    static void pattern3(){
+        for(int i=0;i<5;i++){
+            for(int j=i;j<5;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern2(){
+        for(int i=0;i<5;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern1(){
+       for(int i=0;i<5;i++){
+           for(int j=0;j<5;j++){
+               System.out.print("*");
+           }
+           System.out.println ();
+       } 
+    }
+}
